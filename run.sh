@@ -1,0 +1,3 @@
+cd dosbox
+npm start
+
