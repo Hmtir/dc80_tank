@@ -1,0 +1,17 @@
+version: '3.0'
+
+services:
+  dosbox:
+    container_name: dosbox
+    build:
+      context: ./
+    ports:
+      - '8080:8080'
+      - '81:81'
+      - '8090:8090'
+    volumes:
+      - ./:/app/
+    working_dir:
+      /app
+
+
